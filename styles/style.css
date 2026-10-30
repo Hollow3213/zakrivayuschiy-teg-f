@@ -71,7 +71,7 @@
 
 .card__title {
   font-family: var(--main-font);
-  font-variation-settings: "wght", var(--weight-text);
+  font-variation-settings: "wght", var(--weight-title);
   font-size: 18px;
   line-height: 125%;
   vertical-align: middle;
@@ -155,7 +155,7 @@
   flex-direction: column;
   gap: 25px;
   font-family: var(--main-font);
-  font-weight: var(--weight-text);
+  font-variation-settings: "wght", var(--weight-text);
   font-size: 18px;
   line-height: 21px;
   padding: 25px;
@@ -239,6 +239,10 @@
   transition: fill 0.3s linear 0.06s;
 }
 
+.heart {
+  transform-origin: center;
+}
+
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
 }
@@ -256,7 +260,7 @@
   position: relative;
   transition: box-shadow 0.3s ease;
   border: 2px solid var(--accent-color);
-  background-color: transparent;
+  background-color: var(--background-color);
   cursor: pointer;
 }
 
@@ -309,7 +313,6 @@
   width: 306px;
   min-height: 84px;
   padding: 10px;
-  background-color: var(--background-color);
 }
 
 .save-button__icon {
